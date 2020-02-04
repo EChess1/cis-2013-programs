@@ -1,7 +1,6 @@
-var floatMiles;
-var floatGallons;
-var floatMpg;
-floatMiles = prompt("Enter miles driven");
-floatGallons = prompt("Enter gallons of gas used");
-floatMpg = floatMiles/floatGallons;
-alert("Miles per gallon = " + floatMpg);
+    var floatMiles = prompt("Enter miles driven");
+	floatMiles = parseFloat(floatMiles);
+	var floatGallons = prompt("Enter gallons of gas used");
+	floatGallons = parseFloat(floatGallons);
+	var floatMpg = (floatMiles/floatGallons).toFixed(2);
+	alert("Miles per gallon = " + floatMpg);       
